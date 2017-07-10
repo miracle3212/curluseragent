@@ -1,5 +1,5 @@
 #!/bin/bash
-target="http://jgamblin.com"
+target="   "
 
 echo
 echo -e "Curling $target to test WAF detection"
@@ -7,7 +7,7 @@ echo
 
 while true
 do 
-UserAgent=`gshuf -n 1 ua.txt`
+UserAgent=`gshuf -n 1 user-ag.txt`
 	STARTTIME=$(date +%s)
 	for run in {1..10}
 	do 
